@@ -1,0 +1,40 @@
+In a user profile system of a popular app, usernames are often modified based on certain formatting rules to enhance visual appeal or ensure uniqueness. One such rule is to reverse only the vowels of a username, without altering the position of consonants or the case of any characters.
+
+You are tasked with writing a program that processes a given string (representing a username) and reverses only the vowels in it. The rest of the characters, including their positions, should remain unchanged.
+
+Vowels to consider: 'a', 'e', 'i', 'o', 'u' and their uppercase variants 'A', 'E', 'I', 'O', 'U'.
+
+Input Format
+
+A single line string s (the username) containing only English letters.
+
+Constraints
+
+NA
+
+Output Format
+
+Print the modified string after reversing the vowels.
+
+Sample Input 0
+
+IceCreAm
+Sample Output 0
+
+AceCreIm
+Explanation 0
+
+Vowels in the string: ['I', 'e', 'e', 'A']
+Reversed vowels: ['A', 'e', 'e', 'I']
+Final string after placing them back: "AceCreIm"
+Sample Input 1
+
+leetcode
+Sample Output 1
+
+leotcede
+Explanation 1
+
+Vowels in the string: ['e', 'e', 'o', 'e']
+Reversed vowels: ['e', 'o', 'e', 'e']
+Final string after placing them back: "leotcede"
