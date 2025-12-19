@@ -1,0 +1,54 @@
+A network administrator, Sam, is analyzing logs from a cybersecurity monitoring system. Each log entry contains a timestamp representing when a particular security event was recorded. The logs are stored in non-decreasing order of timestamps, meaning they are sorted but may contain duplicate timestamps if an event occurred multiple times.
+
+Given the sorted list of timestamps and a specific event timestamp X, Sam needs your help to find the first and last occurrence of X in the log. If the event did not occur, return [-1, -1].
+
+You must implement an efficient algorithm with O(log n) complexity.
+
+Input Format
+
+The first line contains an integer N, representing the number of log entries.
+The second line contains N space-separated integers representing the sorted timestamps.
+The third line contains an integer X, representing the timestamp of the event to be searched.
+Constraints
+
+0 ≤ N ≤ 10^5
+-10^9 ≤ Timestamp ≤ 10^9
+The array is sorted in non-decreasing order.
+Output Format
+
+Print the first and last occurrence indices of X as [first, last].
+If the event timestamp is not found, return [-1, -1].
+Sample Input 0
+
+6 
+5 7 7 8 8 10 
+8 
+Sample Output 0
+
+[3, 4]
+Explanation 0
+
+The log entries {5,7,7,8,8,10} contain event 8 at indices 3 and 4.
+
+Sample Input 1
+
+6
+5 7 7 8 8 10 
+6 
+Sample Output 1
+
+[-1, -1]
+Explanation 1
+
+The event 6 is not present in {5,7,7,8,8,10}, so the output is [-1, -1].
+
+Sample Input 2
+
+0 
+0 
+Sample Output 2
+
+[-1, -1]
+Explanation 2
+
+The log is empty, so the event 0 is not found.
