@@ -1,0 +1,57 @@
+You are a software engineer tasked with developing a system for encoding messages in a zigzag pattern for visual effect. The system will take an input string and an integer representing the number of rows. Your job is to design a method that converts the given string into a zigzag pattern with the specified number of rows and then outputs the encoded message by reading the pattern line by line.
+
+In this pattern, characters from the string are arranged in a zigzag pattern across the rows. The pattern starts at the top, moves down row by row, then moves up diagonally once the bottom row is reached, and repeats this process for the rest of the string.
+
+Once the pattern is created, your task is to output the message as if you were reading the rows from top to bottom.
+
+Input Format
+
+A string s (1 <= s.length <= 1000) consisting of English letters (both uppercase and lowercase).
+An integer numRows (1 <= numRows <= 1000).
+Constraints
+
+NA
+
+Output Format
+
+A single string formed by reading the zigzag pattern row by row, left to right.
+
+Sample Input 0
+
+PAYPALISHIRING
+3
+Sample Output 0
+
+PAHNAPLSIIGYIR
+Explanation 0
+
+The zigzag pattern for the string "PAYPALISHIRING" with 3 rows looks like this:
+
+P A H N
+
+A P L S I I G
+
+Y I R
+
+Reading the pattern line by line gives: "PAHNAPLSIIGYIR".
+
+Sample Input 1
+
+PAYPALISHIRING
+4
+Sample Output 1
+
+PINALSIGYAHRPI
+Explanation 1
+
+The zigzag pattern for the string "PAYPALISHIRING" with 4 rows looks like this:
+
+P I N
+
+A L S I G
+
+Y A H R
+
+P I
+
+Reading the pattern line by line gives: "PINALSIGYAHRPI".
