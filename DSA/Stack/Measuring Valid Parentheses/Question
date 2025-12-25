@@ -1,0 +1,43 @@
+In a software development company, developers often work with code that contains various nested parentheses, such as when writing mathematical expressions or function calls. However, they sometimes make mistakes, leading to unbalanced parentheses, which can cause syntax errors. To help developers quickly identify the longest valid substring of parentheses in their code, the company has implemented a tool that analyzes user input and returns the length of the longest valid parentheses substring.
+
+For example, given the input string "(()())", the tool would return 6, as the entire string is valid. Conversely, for the input "(()", it would return 2, as the longest valid substring is "()".
+
+Input Format
+
+The first line contains an integer T, the number of strings to process.
+The next T lines each contain a string consisting of parentheses, i.e., '(' and ')'.
+Constraints
+
+NA
+
+Output Format
+
+For each string, print the length of the longest valid parentheses substring.
+
+Sample Input 0
+
+3
+(()())
+)()()(
+((())
+Sample Output 0
+
+6
+4
+4
+Explanation 0
+
+For the string "(()())", the entire string is valid, so the length is 6.
+For the string ")()()(", the longest valid substring is "()()", which has a length of 4.
+For the string "((())", the longest valid substring is "(())", which has a length of 4.
+Sample Input 1
+
+3
+(()())
+()()
+((()())
+Sample Output 1
+
+6
+4
+6
