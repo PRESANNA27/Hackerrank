@@ -1,0 +1,49 @@
+You are tasked with developing a function that can help a text analysis tool identify the number of palindromic substrings within a given string. Palindromes are sequences of characters that read the same forward and backward, and a substring is defined as any contiguous sequence of characters in the string.
+
+The task is part of a larger project to analyze text and extract meaningful patterns for further processing. You have to create a function that will efficiently count all possible palindromic substrings from a string. The function should consider both even-length and odd-length palindromes, ensuring all of them are counted.
+
+For example, a text processing tool might use this to identify mirrored words or patterns in genetic sequences, or even as part of an algorithm for cryptography. Your tool will help improve efficiency by quickly detecting all such patterns in any given string.
+
+You need to count all palindromic substrings in the input string. A string can have multiple palindromic substrings, and the same substring may appear multiple times if it occurs in different positions within the string.
+
+Input Format
+
+A string s consisting of lowercase English letters (1 ≤ s.length ≤ 1000).
+
+Constraints
+
+NA
+
+Output Format
+
+An integer representing the number of palindromic substrings in the string s.
+
+Sample Input 0
+
+abc
+Sample Output 0
+
+3
+Explanation 0
+
+The palindromic substrings in "abc" are:
+
+"a"
+"b"
+"c"
+Thus, the output is 3.
+
+Sample Input 1
+
+aaa
+Sample Output 1
+
+6
+Explanation 1
+
+The palindromic substrings in "aaa" are:
+
+"a", "a", "a" (each individual character is a palindrome)
+"aa", "aa" (substrings of length 2 are palindromes)
+"aaa" (the entire string is a palindrome)
+Thus, the output is 6.
