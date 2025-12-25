@@ -1,0 +1,46 @@
+You are tasked with building a chess game assistant that can solve the classic N-Queens problem: placing n queens on an n x n chessboard such that no two queens threaten each other. This means:
+
+No two queens can share the same row.
+No two queens can share the same column.
+No two queens can share the same diagonal.
+Input Format
+
+A single integer n — the size of the chessboard and the number of queens.
+
+Constraints
+
+NA
+
+Output Format
+
+Print each solution as a block of n strings, each of length n.
+Separate different solutions by a blank line.
+The order of solutions does not matter.
+Sample Input 0
+
+4
+Sample Output 0
+
+.Q..
+...Q
+Q...
+..Q.
+
+..Q.
+Q...
+...Q
+.Q..
+Explanation 0
+
+There are two distinct ways to place 4 queens on a 4x4 board without conflict. Each solution block shows one valid board arrangement.
+
+Sample Input 1
+
+1
+Sample Output 1
+
+Q
+Explanation 1
+
+A 1x1 board only has one cell, so the single queen goes there.
+
