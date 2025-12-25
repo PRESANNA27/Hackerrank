@@ -1,0 +1,77 @@
+You are part of the software development team of a multitasking operating system, which handles processes and tasks using data structures like stacks. To optimize memory usage in the system, you are tasked with implementing two stacks within a single contiguous block of memory, i.e., an array. The two stacks need to share this array such that one grows from the start (index 0) and the other grows from the end (last index).
+
+You need to write a program that efficiently manages both stacks, allowing the system to push and pop elements from either stack without exceeding the array boundaries. Your solution should ensure that one stack does not overflow into the space allocated for the other stack unless there is unused space.
+
+Design a system where two stacks are implemented using a single array. Your program should support the following operations:
+
+push1(x): Pushes x to Stack 1 (which grows from the start of the array).
+push2(x): Pushes x to Stack 2 (which grows from the end of the array).
+pop1(): Pops an element from Stack 1.
+pop2(): Pops an element from Stack 2.
+You should take into consideration the following constraints:
+
+Both stacks should use the array optimally, and if one stack tries to push an element when the array is full (or when there is no more room for that stack), the program should not allow that operation.
+Handle operations without any extra space outside the single array.
+Input Format
+
+First, an integer n, representing the size of the array.
+
+Followed by commands which could be any of the following:
+
+1 x (where 1 represents a push to Stack 1 and x is the value to push).
+2 x (where 2 represents a push to Stack 2 and x is the value to push).
+3 (represents a pop from Stack 1).
+4 (represents a pop from Stack 2).
+The input ends when you receive the command -1.
+
+Constraints
+
+NA
+
+Output Format
+
+For pop1() and pop2(), print the popped values.
+If an operation cannot be completed (e.g., pushing when the stack is full or popping from an empty stack), no output should be printed.
+Sample Input 0
+
+6
+1 10
+1 20
+2 30
+2 40
+3
+4
+-1
+Sample Output 0
+
+20
+40
+Explanation 0
+
+First, we initialize an array of size 6.
+push1(10) pushes 10 to Stack 1.
+push1(20) pushes 20 to Stack 1.
+push2(30) pushes 30 to Stack 2.
+push2(40) pushes 40 to Stack 2.
+pop1() pops 20 from Stack 1, which is printed.
+pop2() pops 40 from Stack 2, which is printed.
+Sample Input 1
+
+8
+1 5
+1 10
+1 15
+2 25
+2 30
+2 35
+3
+4
+3
+4
+-1
+Sample Output 1
+
+15
+35
+10
+30
