@@ -1,0 +1,38 @@
+You are part of a development team for a calculator application designed to help users perform basic arithmetic calculations, including addition, subtraction, multiplication, and division. Users can enter expressions as strings, and the application needs to evaluate these expressions while adhering to standard mathematical rules.
+
+Your task is to implement a function that evaluates a given string expression and returns its integer value. The expression can contain non-negative integers and operators (+, -, *, /). The division operation should truncate toward zero, meaning that the result should be rounded towards zero (for example, 5 / 2 should yield 2, and -5 / 2 should yield -2).
+
+To ensure robust performance, the expression is guaranteed to be valid, and all intermediate results will remain within the range of [-231, 231 - 1].
+
+Implement a function that takes a string s representing a mathematical expression and evaluates it, returning the result as an integer.
+
+Input Format
+
+A single string s representing the mathematical expression to be evaluated.
+
+Constraints
+
+NA
+
+Output Format
+
+Return an integer value representing the result of the evaluated expression.
+
+Sample Input 0
+
+3+5/2
+Sample Output 0
+
+5
+Explanation 0
+
+The expression evaluates as follows:
+
+3 + (5 / 2) results in 3 + 2 which equals 5. The division 5 / 2 is performed first, and the result is truncated towards zero.
+
+Sample Input 1
+
+3+5
+Sample Output 1
+
+8
