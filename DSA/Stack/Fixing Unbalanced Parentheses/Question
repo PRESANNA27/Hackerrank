@@ -1,0 +1,36 @@
+You are developing a form validation system for an online survey platform. In one of the input fields, users are required to type an expression that contains only parentheses ( and ). However, many users tend to submit unbalanced parentheses, making their responses syntactically invalid.
+
+Your task is to create a program that automatically analyzes the input and calculates the minimum number of parentheses that need to be added to the string to make it valid. This will ensure that the responses are properly balanced and the survey form can be processed correctly.
+
+Write a program that determines how many additional parentheses must be added to make the given string valid. You are tasked with writing a Java program to solve this issue.
+
+Problem Statement
+
+Given a string S consisting of only ( and ) parentheses, you need to find the minimum number of parentheses to be added to make the resulting string valid. A string is valid if every opening parenthesis ( has a corresponding closing parenthesis ) and vice versa.
+
+Input Format
+
+The first line contains an integer T, the number of test cases.
+For each test case, the next line contains a string S consisting of only ( and ).
+Constraints
+
+0 ≤ len(S) ≤ 1000
+
+Output Format
+
+For each test case, print the minimum number of parentheses required to make the string valid.
+
+Sample Input 0
+
+1
+(()))
+Sample Output 0
+
+1
+Sample Input 1
+
+1
+(((()(
+Sample Output 1
+
+4
