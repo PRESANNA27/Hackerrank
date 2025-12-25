@@ -1,0 +1,52 @@
+You are part of a software development team for a weather forecasting application. The application tracks daily temperatures and provides insights to users about how long they might have to wait for a warmer day. This feature can help users plan their outdoor activities, clothing choices, or even schedule events.
+
+Your task is to implement a function that takes an array of integers representing daily temperatures and returns an array indicating how many days a user must wait after each day to experience a warmer temperature. If there is no future day with a warmer temperature, the corresponding value in the result should be 0.
+
+Problem Description
+
+Given an array temperatures where temperatures[i] represents the temperature on the i-th day, your goal is to produce an array answer such that:
+
+answer[i] is the number of days until a warmer temperature occurs.
+If there is no future day with a warmer temperature, then answer[i] should be 0.
+Input Format
+
+A single line containing an array of integers representing the daily temperatures.
+
+Constraints
+
+NA
+
+Output Format
+
+An array of integers indicating the number of days to wait for a warmer temperature for each day.
+
+Sample Input 0
+
+8
+73 74 75 71 69 72 76 73
+Sample Output 0
+
+1 1 4 2 1 1 0 0
+Explanation 0
+
+On day 0 (temperature 73), you have to wait 1 day to get a warmer temperature (74).
+
+On day 1 (temperature 74), you have to wait 1 day to get a warmer temperature (75).
+
+On day 2 (temperature 75), you have to wait 4 days until day 6 (temperature 76).
+
+On day 3 (temperature 71), you have to wait 2 days until day 5 (temperature 72).
+
+On day 4 (temperature 69), you have to wait 1 day until day 5 (temperature 72).
+
+On day 5 (temperature 72), you have to wait 1 day until day 6 (temperature 76).
+
+On day 6 (temperature 76), there is no warmer day, so the answer is 0.
+
+Sample Input 1
+
+6
+30 40 50 60 70 80
+Sample Output 1
+
+1 1 1 1 1 0
