@@ -1,0 +1,36 @@
+In a task scheduling system, tasks are arranged in a linked list, with each node representing a task. Sometimes, tasks need to be swapped in pairs for optimizing execution priority, based on a new requirement where adjacent tasks should alternate in priority. The system needs to swap every two adjacent tasks without altering their actual data but just rearranging the nodes.
+
+For instance, if Task1 and Task2 are adjacent and Task3 and Task4 follow, after swapping the tasks in pairs, the list should have Task2 first, followed by Task1, then Task4 followed by Task3. This rearrangement optimizes task priority while maintaining data integrity.
+
+Swap every two adjacent tasks in a linked list.
+
+Input Format
+
+The first line contains an integer n, representing the number of nodes (tasks) in the list.
+The next line contains n integers, each representing the task IDs in the list.
+Constraints
+
+NA
+
+Output Format
+
+The output is a list of task IDs with every two adjacent tasks swapped.
+
+Sample Input 0
+
+4
+1 2 3 4
+Sample Output 0
+
+2 1 4 3
+Explanation 0
+
+The program accepts the number of elements in the linked list and then takes the values of the list elements from the user. The swapPairs function swaps every two adjacent nodes without altering their values. It uses a dummy node and pointer manipulation to perform the swap. The modified linked list is displayed after performing the swaps in pairs.
+
+Sample Input 1
+
+6
+10 20 30 40 50 60
+Sample Output 1
+
+20 10 40 30 60 50
